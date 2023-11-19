@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyashi - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(0, 17, 255, 0.342);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: blueviolet;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: whitesmoke
+        }
+
+        nav ul li a:hover {
+            color: #ffae00d6;
+            font-size: 1.5rem;
+        }
+        main hr{
+            border: 0;
+            background:rgba(220, 20, 210, 0.644);
+            height: 1.2px;
+            margin:40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100 px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+            margin-top: 10%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background:rgb(162, 142, 182);
+            color: azure;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin-top: 10%;
+
+        }
+
+        .purple {
+            color: rgba(220, 20, 210, 0.644)
+        }
+
+        #element {
+            color: rgba(220, 20, 210, 0.644)
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin:auto;
+            height: 80vh;
+
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        footer{
+            background-color:blueviolet;
+            height: 233px;
+        }
+        .footer{
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Suyashi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hey,I'm <span class="purple">Suyashi</span>
+                <div> And I'm a budding </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection"></div>
+            <img src="dev.png" width="500" height="500" >
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span>About me</span>
+            <h1>Currently a pre-final year engineering undergrad majoring in data science.</h1>
+            <br>
+            <h4>Website under progress..</h4>
+            <div class="box"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                This was all.
+            </div>
+            <div class="second"></div>
+            <div class="third"></div>
+            <div class="fourth"></div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Data Scientist'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</body>
+
+</html>
